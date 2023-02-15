@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+/*----body----*/
+body {
+  background-color: hsl(220, 15%, 55%);
+}
+/*----main----*/
+main {
+  max-width: 375px;
+  max-height: 600px;
+}
