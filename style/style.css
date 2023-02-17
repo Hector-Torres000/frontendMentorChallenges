@@ -17,11 +17,15 @@ body {
 /*-----section-----*/
 section {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 section div {
   height: 30%;
   width: 25%;
+}
+section div a {
+  text-decoration: none;
+  color: black;
 }
 section div img {
   width: 100%;
