@@ -11,12 +11,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Hanken Grotesk';
+  font-size: 1.8rem;
 }
 /*-----main-----*/
 main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  max-height: 100vh;
   width: 100vw;
   text-align: center;
 }
@@ -27,28 +29,33 @@ main section:first-of-type {
     hsl(252, 100%, 67%),
     hsl(241, 81%, 54%)
   );
-  flex: 1;
   border-radius: 0 0 20px 20px;
   color: white;
-}
-main section:first-of-type div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
-  margin: auto auto;
+  flex: 1 50vh;
+  padding-top: 5%;
+}
+main section:first-of-type * {
+  flex: 1;
+}
+main section:first-of-type div {
   border-radius: 50%;
+  width: 40%;
   background-image: linear-gradient(
-    0deg,
+    180deg,
     hsla(256, 72%, 46%, 1),
     hsla(241, 72%, 46%, 0)
   );
+  flex: 3;
+}
+main section:first-of-type div h1 {
+  font-size: 4rem;
 }
 /*----main second section----*/
 main section:last-of-type {
-  flex: 1;
+  flex: 1 50vh;
 }
 main section:last-of-type button {
   color: white;
@@ -61,9 +68,9 @@ main section:last-of-type button {
   width: 95%;
   margin: 3%;
 }
-main section:last-of-type > div {
-  display: flex;
-  flex-direction: column;
+main section:last-of-type button:hover {
+  cursor: pointer;
+  background-color: hsl(224, 30%, 27%);
 }
 
 /*****JS Classes*****/
@@ -74,20 +81,46 @@ main section:last-of-type > div {
   padding: 3%;
   border-radius: 10px;
   align-items: center;
+  height: 15%;
+}
+.h3BackgroundImage {
+  padding-left: 30px;
+  background-repeat: no-repeat;
 }
 .red {
-  background-color: hsla(0, 100%, 67%, 0.2);
+  background-color: hsla(0, 100%, 67%, 0.1);
 }
 .yellow {
-  background-color: hsl(39, 100%, 56%, 0.2);
+  background-color: hsl(39, 100%, 56%, 0.1);
 }
 .green {
-  background-color: hsl(166, 100%, 37%, 0.2);
+  background-color: hsl(166, 100%, 37%, 0.1);
 }
 .blue {
-  background-color: hsl(234, 85%, 45%, 0.2);
+  background-color: hsl(234, 85%, 45%, 0.1);
 }
 /* Light red: hsl(0, 100%, 67%)
 - Orangey yellow: hsl(39, 100%, 56%)
 - Green teal: hsl(166, 100%, 37%)
 - Cobalt blue: hsl(234, 85%, 45%) */
+
+@media all and (min-width: 425px) {
+  main {
+    flex-direction: row;
+    max-width: 50%;
+  }
+  main section:first-of-type {
+    border-radius: 10px 10px 10px 10px;
+  }
+  main section:last-of-type {
+    box-shadow: 10px 10px 10px rgb(133, 133, 150);
+    border-radius: 0 0 10px 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    height: 100vh;
+  }
+}
