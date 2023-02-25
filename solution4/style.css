@@ -1,0 +1,33 @@
+*::after,
+*::before,
+* {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+/*-----body-----*/
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/*-----main-----*/
+main {
+  background-color: hsl(213, 19%, 18%);
+  height: 350px;
+  flex: 1;
+  border-radius: 10px;
+  margin: 0 5%;
+  padding: 5%;
+}
+
+/*****JS Classes*****/
+.second {
+  display: none;
+}
