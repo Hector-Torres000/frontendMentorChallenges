@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: 'Overpass', sans-serif, monospace;
 }
 /*-----body-----*/
 body {
@@ -21,13 +22,55 @@ body {
 main {
   background-color: hsl(213, 19%, 18%);
   height: 350px;
-  flex: 1;
   border-radius: 10px;
   margin: 0 5%;
   padding: 5%;
+  display: flex;
+  flex-direction: column;
 }
-
-/*****JS Classes*****/
-.second {
+/*-----main first-----*/
+main .first {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+main .first * {
+  display: block;
+  flex: 1;
+}
+main .first h2 {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+main .first p {
+  margin: 0;
+}
+main .first .num-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+main .first .num-buttons .num-button {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  flex: 0 40px;
+  height: 40px;
+}
+main .first .main-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 40px;
+  flex: 0 45px;
+}
+/*-----main second-----*/
+main .second {
   display: none;
 }
+/*****JS Classes*****/
