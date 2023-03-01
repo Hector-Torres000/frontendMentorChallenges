@@ -28,7 +28,8 @@ main {
   background-position: top 50px, left 0;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px;
+  min-height: 360px;
+  max-width: 327px;
   border-radius: 10px;
   margin: 0 5%;
   padding: 5%;
@@ -39,6 +40,8 @@ main {
 main .first::before {
   content: '';
   position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -51,6 +54,7 @@ main .first {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   flex: 1;
 }
 main .first * {
@@ -58,18 +62,31 @@ main .first * {
   flex: 1;
 }
 main .first h2 {
-  margin-top: 60px;
-  margin-bottom: 0;
+  margin: auto 0;
+  margin-top: 50px;
+  flex-basis: 30px;
+  max-width: 279px;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
 }
 main .first p {
-  margin: 0;
+  margin: auto 0;
+  max-width: 279px;
+  flex-basis: 66px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
   color: hsl(217, 12%, 63%);
 }
 main .first .num-buttons {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: auto 0;
+  margin-top: 3%;
   padding: 0;
+  max-width: 281px;
+  height: 42px;
 }
 main .first .num-buttons .num-button {
   display: block;
@@ -82,18 +99,39 @@ main .first .num-buttons .num-button {
   height: 40px;
   color: hsl(216, 12%, 54%);
   background-color: hsla(0, 0%, 0%, 0.3);
+  cursor: pointer;
+}
+main .first .num-buttons .num-button:hover,
+main .first .num-buttons .num-button:focus {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
 }
 main .first .main-button {
   border: none;
   padding: 0;
-  margin: 0;
+  margin: auto 0;
   border-radius: 40px;
   flex: 0 45px;
+  max-width: 279px;
   color: white;
   background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+main .first .main-button:hover,
+main .first .main-button:focus {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(25, 97%, 53%);
+}
+main .first .main-button:active {
+  background-color: white;
 }
 /*-----main second-----*/
-main .second {
-  display: none;
-}
+
 /*****JS Classes*****/
+.active {
+  background-color: hsl(25, 97%, 53%) !important;
+  color: white !important;
+}
+.hidden {
+  display: none !important;
+}
