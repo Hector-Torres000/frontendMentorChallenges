@@ -5,6 +5,7 @@
 }
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 /*-----body-----*/
 body {
@@ -13,6 +14,16 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-color: darkgray;
+}
+body h1 {
+  font-size: 3rem;
+}
+body p {
+  font-size: 2rem;
+}
+body p a {
+  text-decoration: none;
 }
 /*-----section-----*/
 section {
@@ -22,6 +33,7 @@ section {
 section div {
   height: 30%;
   width: 25%;
+  font-size: 1.5rem;
 }
 section div a {
   text-decoration: none;
@@ -31,4 +43,5 @@ section div img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 10px;
 }
