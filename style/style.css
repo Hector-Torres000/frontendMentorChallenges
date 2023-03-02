@@ -10,6 +10,7 @@ html {
 /*-----body-----*/
 body {
   margin: 0;
+  margin-bottom: 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,10 +30,11 @@ body p a {
 section {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 section div {
   height: 30%;
-  width: 25%;
+  width: 27%;
   font-size: 1.5rem;
 }
 section div a {
