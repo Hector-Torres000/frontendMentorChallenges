@@ -13,8 +13,15 @@ numButtons.addEventListener('click', (e) => {
 const mainButton = document.querySelector('.main-button');
 const firstSection = document.querySelector('.first');
 const secondSection = document.querySelector('.second');
+const score = document.querySelector('.score');
 
 mainButton.addEventListener('click', () => {
-  firstSection.classList.add('hidden');
-  secondSection.classList.remove('hidden');
+  for (const button of numButtons.children) {
+    if (button.classList.contains('active')) {
+      const numScore = button.textContent;
+      firstSection.classList.add('hidden');
+      secondSection.classList.remove('hidden');
+      score.textContent = `You selected ${numScore} out of 5`;
+    }
+  }
 });

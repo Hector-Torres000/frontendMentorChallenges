@@ -29,10 +29,9 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 360px;
-  max-width: 327px;
+  min-width: 327px;
   border-radius: 10px;
-  margin: 0 5%;
-  padding: 5%;
+  padding: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -62,17 +61,17 @@ main .first * {
   flex: 1;
 }
 main .first h2 {
-  margin: auto 0;
+  margin: 0;
   margin-top: 50px;
   flex-basis: 30px;
-  max-width: 279px;
+  width: 279px;
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3rem;
 }
 main .first p {
-  margin: auto 0;
-  max-width: 279px;
+  margin: 0;
+  width: 279px;
   flex-basis: 66px;
   font-size: 1.4rem;
   font-weight: 400;
@@ -82,10 +81,9 @@ main .first p {
 main .first .num-buttons {
   display: flex;
   justify-content: space-between;
-  margin: auto 0;
-  margin-top: 3%;
+  margin: 0;
   padding: 0;
-  max-width: 281px;
+  width: 281px;
   height: 42px;
 }
 main .first .num-buttons .num-button {
@@ -109,10 +107,10 @@ main .first .num-buttons .num-button:focus {
 main .first .main-button {
   border: none;
   padding: 0;
-  margin: auto 0;
+  margin: 0;
   border-radius: 40px;
   flex: 0 45px;
-  max-width: 279px;
+  width: 279px;
   color: white;
   background-color: hsl(25, 97%, 53%);
   cursor: pointer;
@@ -126,7 +124,43 @@ main .first .main-button:active {
   background-color: white;
 }
 /*-----main second-----*/
-
+main .second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  background-image: url('images/illustration-thank-you.svg');
+  background-repeat: no-repeat;
+  background-position: top 0 left 50%;
+}
+main .second * {
+  flex: 1;
+  margin: 0;
+}
+main .second span {
+  display: block;
+  color: hsl(25, 97%, 53%);
+  background-color: hsla(0, 0%, 0%, 0.3);
+  border-radius: 22.5px;
+  line-height: 2.2;
+  width: 168px;
+  max-height: 32px;
+  margin-top: 50%;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+main .second h2 {
+  max-height: 37px;
+  width: 279px;
+}
+main .second p {
+  max-height: 66px;
+  width: 279px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
 /*****JS Classes*****/
 .active {
   background-color: hsl(25, 97%, 53%) !important;
@@ -134,4 +168,11 @@ main .first .main-button:active {
 }
 .hidden {
   display: none !important;
+}
+
+@media all and (min-width: 400px) {
+  main {
+    max-width: 412px;
+    max-height: 416px;
+  }
 }
