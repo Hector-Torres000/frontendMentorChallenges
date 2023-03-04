@@ -16,8 +16,6 @@ to create accurate and responsive website/website components both for mobile and
 
 ## Optimizations
 
-_(optional)_
-
 The website could use a great deal of web design flare, at the moment it is pretty dull with not that many colors. I am not a designer, so a cool design would be awesome.
 
 ## Lessons Learned:
