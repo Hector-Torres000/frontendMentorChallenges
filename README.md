@@ -5,7 +5,7 @@ In addition, these are the websites/website components I create during my Twitch
 
 **Link to project:** https://hector-torres000.github.io/frontendMentorChallenges/
 
-<img src="" alt="my frontend challenges website screenshot">
+<img src="https://raw.githubusercontent.com/Hector-Torres000/frontendMentorChallenges/main/websiteScreenshot.png" width="100%" alt="my frontend challenges website screenshot">
 
 ## How It's Made:
 
