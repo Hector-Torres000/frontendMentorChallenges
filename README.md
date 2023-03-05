@@ -5,7 +5,7 @@ In addition, these are the websites/website components I create during my Twitch
 
 **Link to project:** https://hector-torres000.github.io/frontendMentorChallenges/
 
-<img src="" alt="my frontend challenges website screenshot">
+<img src="https://raw.githubusercontent.com/Hector-Torres000/frontendMentorChallenges/main/websiteScreenshot.png" width="100%" alt="my frontend challenges website screenshot">
 
 ## How It's Made:
 
@@ -15,8 +15,6 @@ This is just a basic static website that leads you the appropriate solution to t
 to create accurate and responsive website/website components both for mobile and desktop users.
 
 ## Optimizations
-
-_(optional)_
 
 The website could use a great deal of web design flare, at the moment it is pretty dull with not that many colors. I am not a designer, so a cool design would be awesome.
 
