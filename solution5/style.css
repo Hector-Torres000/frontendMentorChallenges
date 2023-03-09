@@ -1,0 +1,37 @@
+:root {
+  --neon-green: rgb(84, 230, 175);
+  --dark-blue: rbg(44, 52, 75);
+  --mid-blue: rgb(90, 102, 138);
+  --light-blue: rgb(194, 203, 229);
+  --background: rgb(18, 23, 37);
+  --background-opa: rgba(18, 23, 37, 0.9);
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--background);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: radial-gradient(
+      var(--background-opa),
+      var(--background-opa)
+    ),
+    url('images/image-host.jpg');
+  background-repeat: repeat, no-repeat;
+  background-size: auto 100%;
+  background-position: -350px;
+}
+main * {
+  flex: 1;
+}
