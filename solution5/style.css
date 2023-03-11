@@ -10,15 +10,19 @@
 *::after,
 *::before {
   box-sizing: inherit;
+  font-family: inherit;
+  border: solid 3px red;
 }
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: 'chivo', sans-serif, monospace;
 }
 
 body {
   background-color: var(--background);
 }
+/*-----main-----*/
 main {
   display: flex;
   flex-direction: column;
@@ -35,3 +39,26 @@ main {
 main * {
   flex: 1;
 }
+#logo {
+  margin: auto auto;
+  background-image: url('images/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+}
+h1 {
+  text-align: center;
+  color: var(--neon-green);
+  font-weight: 100;
+  font-size: 2.6rem;
+}
+h1 span {
+  color: white;
+}
+p {
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--light-blue);
+}
+/*-----form-----*/
