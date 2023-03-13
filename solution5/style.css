@@ -11,7 +11,7 @@
 *::before {
   box-sizing: inherit;
   font-family: inherit;
-  border: solid 3px red;
+  /* border: solid 1px red; */
 }
 html {
   box-sizing: border-box;
@@ -35,6 +35,8 @@ main {
   background-repeat: repeat, no-repeat;
   background-size: auto 100%;
   background-position: -350px;
+
+  padding: 24px;
 }
 main * {
   flex: 1;
@@ -51,6 +53,11 @@ h1 {
   color: var(--neon-green);
   font-weight: 100;
   font-size: 2.6rem;
+
+  display: block;
+  margin-bottom: 0;
+  line-height: 3.8rem;
+  height: 76px;
 }
 h1 span {
   color: white;
@@ -60,5 +67,40 @@ p {
   font-size: 1.5rem;
   text-align: center;
   color: var(--light-blue);
+  line-height: 2.5rem;
+  flex-basis: 24px;
+
+  display: block;
+  margin-top: 0;
+}
+/*-----p bg images-----*/
+p {
+  background-image: url('images/spotify.svg'), url('images/apple-podcast.svg'),
+    url('images/google-podcasts.svg'), url('images/pocket-casts.svg');
+  background-repeat: no-repeat;
+  background-position: left 10% bottom 1%, left 38% bottom 0,
+    right 38% bottom 4%, right 10% bottom 3%;
+  background-size: 56px;
 }
 /*-----form-----*/
+form {
+  margin-bottom: 70px;
+}
+form * {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 30px;
+  height: 46px;
+  font-size: 1.4rem;
+  border: none;
+}
+form input {
+  padding-left: 32px;
+  color: white;
+  background-color: var(--mid-blue);
+}
+form button {
+  color: var(--dark-blue);
+  background-color: var(--neon-green);
+}
